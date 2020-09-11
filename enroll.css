@@ -1,0 +1,240 @@
+@charset 'utf-8';  
+
+
+
+/* head */
+#head .left img{
+    width: 169px;
+    height: 88px;
+}
+#head .right{
+    width: 200px;
+    height: 52px;
+    line-height: 30px;
+}
+#head .right img{
+    width: 51px;
+    height: 51px;
+    float: left;
+}
+
+/* main */
+#main .content{
+    width: 1100px;
+    height: 700px;
+    padding: 0 80px;
+    box-sizing: border-box;
+
+}
+#main .top{
+    padding-bottom: 15px;
+    margin-bottom: 45px;
+    border-bottom: 2px solid #ccc;
+}
+#main .top span{
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 228px;
+    position: relative;
+}
+#main .top .one:after{
+    content: '1';
+    display: block;
+    width: 23px;
+    height: 23px;
+    color: #fff;
+    font-style: normal;
+    background: orange;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+#main .top .two:after{
+    content: '2';
+    display: block;
+    width: 23px;
+    height: 23px;
+    color: #fff;
+    font-style: normal;
+    background: #ccc;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+#main .top .yes:after{
+    content: '√';
+    display: block;
+    width: 23px;
+    height: 23px;
+    color: #fff;
+    font-style: normal;
+    background: #ccc;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+#main .top .user:hover:after{
+    content: '';
+    display: block;
+    width: 216px;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    margin-left: -100%;
+}
+#main .top .ID:hover:after{
+    content: '';
+    display: block;
+    width: 216px;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    margin-left: -75%;
+    /* display: none; */
+}
+#main .top .succeed:hover:after{
+    content: '';
+    display: block;
+    width: 216px;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    margin-left: -125%;
+    /* display: none; */
+}
+
+#main .content .down{
+    width: 700px;
+    height: 533px;
+    border: 1px solid #ccc;
+    border-top: 2px solid orange;
+    padding: 25px 25px 35px 25px;
+    position: relative;
+    left: 50%;
+    margin-left: -38%;
+}
+#main .content .down .btn{
+    width: 180px;
+    height: 38px;
+    outline: none;
+    border-radius: 15px;
+    background-color: #f60;
+    border-color: #f60;
+    cursor: pointer;
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    margin-left: -10%;
+}
+/* 注册账号信息 */
+#main .content .writeC{
+    width: 700px;
+    height: 533px;
+    /* border: 1px solid #ccc; */
+    /* border-top: 2px solid #ccc; */
+    padding: 25px 25px 35px 25px;
+    position: relative;
+    left: 50%;
+    margin-left: -38%;
+    display: none;
+
+}
+#main .content .writeC table tr td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+
+#main .content .writeC table tr td select{
+    height: 30px;
+    border-color: #ccc;
+}
+#main .content .writeC table{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 25%;
+}
+#main .content .writeC table tr{
+    height: 50px;
+    margin-top: 20px;
+}
+
+#main .content .writeC input{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-color: #ccc;
+    /* margin-top: 20px; */
+}
+#main .content .writeC input[name="email"]{
+    width: 198px;
+
+}
+#main .content .writeC input[name="inputCode"]{
+    width: 170px;
+
+}
+#main .content .writeC input[name="getCode"]{
+    width: 120px;
+    background-color: #f60;
+    border-radius: 15px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#main .content .writeC input[name="sub"]{
+    width: 230px;
+    height: 40px;
+    background-color: #f60;
+    border-radius: 20px;
+    border: 0;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 80px;
+    left: 40%;
+}
+#main .content .writeC .qiang{
+    width: 300px;
+    height: 30px;
+}
+
+#main .content .success{
+    width: 700px;
+    height: 533px;
+    /* border: 1px solid #ccc; */
+    /* border-top: 2px solid #ccc; */
+    padding: 25px 25px 35px 25px;
+    position: relative;
+    left: 50%;
+    margin-left: -38%;
+    display: none;
+
+}
+#main .content .success img{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: 10%;
+
+}
+.active{
+    display: block;
+}

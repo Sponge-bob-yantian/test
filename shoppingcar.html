@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+     <!-- 引入重置样式表 -->
+     <link rel="stylesheet" href="../css/reset.css">
+     <!-- 引入公共样式表 -->
+     <link rel="stylesheet" href="../css/common.css">
+     <!-- 引入当前页面样式表 -->
+    <link rel="stylesheet" href="../css/shoppingcar.css">
+    <!-- 引入jq库 -->
+    <script src="../js/jquery.js"></script>
+    <!-- 引入当前页面js脚本 -->
+    <script src="../js/shoppingcar.js"></script>
+</head>
+<body>
+    <!-- head -->
+    <div id="head">
+        <div class="head-top contain-fluid clearfix bgc000">
+            <div class="contain font14 top pr">
+                <p class="fl">乐购www.legou.com</p>
+                <p class="fr">
+                <span>欢迎光临乐购</span>   
+                <span class="ml10">请  <a href="../temp/load.html" target="_blank">登陆</a>  |  <a href="../temp/enroll.html" target="_blank">注册</a></span> 
+                </p> 
+            </div>
+        </div>
+        <div class="head-middle contain mt10 clearfix">
+            <div class="fl"><h1 ><a href="#"><img src="../img/logodown.png" alt=""></a></h1></div>
+            <div class="fr right">
+                <form action="" class="mt10 clearfix ">
+                    <input type="text" class="search-text fl pr20" placeholder="请输入要搜索的商品名">
+                    <input type="submit" class="search-sub fl mr20" value=""><span class="icon1"></span>
+                    <a href="../temp/shoppingcar.html" target="_blank"><input type="button" class="shopping fl mr20" value="购物车"></a><span class="icon2"></span>
+                    <a href="#"><input type="button" class="myorder fl" value="我的订单"></a>
+                </form>
+                <ul class="nav clearfix fl mt20">
+                    <li><a href="#">图书</a></li>
+                    <li><a href="#">电子书</a></li>
+                    <li><a href="#">原创文学</a></li>
+                    <li><a href="#">服装</a></li>
+                    <li><a href="#">运动户外</a></li>
+                    <li><a href="#">孕婴童</a></li>
+                    <li><a href="#">家居</a></li>
+                    <li><a href="#">创意文具</a></li>
+                    <li><a href="#">地方特产</a></li>
+                    <li><a href="#">海外购</a></li>
+                    <li><a href="#">电器城</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div id="main" class="contain-fluid bgcf9f" style="height: 1286px;">
+        <div class="content contain bgcfff ">
+            <div class="top clearfix lh30">
+                <div class="left fl">
+                    <p>全部商品</p><p>活动商品</p><p>库存紧张</p>
+                </div>
+                <div class="right fr">
+                    <p><span class="bold">温馨提示;</span>亲爱的顾客,您还没有登录,所有商品价格,活动信息以登录后显示为准</p>
+                    <p><a href="../temp/load.html" target="_blank" class="fr"><button>立即登录</button></a></p>
+                </div>
+            </div>
+            <div class="down clearfix mt20">
+                <div class="left clearfix fl">
+                    <ul class="clearfix">
+                        <li><input type="checkbox" class="mr10 allSelect">全选</li>
+                        <li><a href="#">删除</a></li>
+                        <li><a href="#">分享</a></li>
+                        <li><a href="#">移入购物车</a></li>
+                        <li><a href="#">清除失效的宝贝</a></li>
+                    </ul>
+                </div>
+                <div class="right clearfix fr">
+                    <p>已选商品<span class="font16 fred bold ml10 allNum">0</span></p>
+                    <p>合计(不含运费)<span class="fred bold font16 ml10 allPrice">&yen;0.00</span></p>
+                    <p><button>去结算</button></p>
+                </div>
+            </div>
+            <div class="first father">
+                <div class="title">
+                    
+                    <input type="checkbox" class="mr10 sigAllSelect">木果果木官方旗舰店<span class="contact mr10 ml20 ">联系商家</span> <span class="fred">满2件包邮</span>
+                        
+                    
+                    <div class="sList clearfix">
+                        <div class="mr10 pt40">
+                            <input type="checkbox" class="sigSelect">
+                        </div>
+                        <div class="mr20"><img src="../img/left.jpg" alt=""></div>
+                        <div style="width: 248px;" class="mr60">
+                            <h4><a href="#" class="f333">木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫</a></h4>
+                            <br>
+                            <span class="new">新品</span><span class="free">包邮</span>
+                        </div>
+                        <div class="mr120" style="width: 85px;">
+                            <p>颜色:炫酷黑</p>
+                            <p>尺寸:M</p>
+                        </div>
+                        <div style="width:72px;" class="mr100 tc">
+                            <p class="font18 fred bold sigPrice">190.00</p>
+                            <p class="f9f"><span class="em">vip</span>积分100</p>
+                        </div>
+                        <div class="mr120 clearfix pt30 much">
+                            <button class="fl reNum">-</button><input type="text" class="tc fl num" name="num" value="1"><button class="fl addNum">+</button>
+                            <!-- <form action="#">
+                                <input type="button" class="fl" value="-" name="subtract"><input type="text" class="fl tc" name="num" value="1"><input type="button" class="fl" value="+" name="add">
+                            </form> -->
+                        </div>
+                        <div class="tr">
+                            <p><a href="#">移入收藏夹</a></p>
+                            <p><a href="#">删除</a></p>
+                            <p><a href="#">分享</a></p>
+                            <p><a href="#">相似宝贝</a></p>
+                        </div>
+                    </div>
+
+                    <div class="sList clearfix">
+                        <div class="mr10 pt40">
+                            <input type="checkbox" class="sigSelect">
+                        </div>
+                        <div class="mr20">
+                            <img src="../img/left.jpg" alt="">
+                        </div>
+                        <div style="width: 248px;" class="mr60">
+                            <h4><a href="#" class="f333">木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫</a></h4>
+                            <br>
+                            <span class="new">新品</span><span class="free">包邮</span>
+                        </div>
+                        <div class="mr120" style="width: 85px;">
+                            <p>颜色:炫酷黑</p>
+                            <p>尺寸:M</p>
+                        </div>
+                        <div style="width:72px;" class="mr100 tc">
+                            <p class="font18 fred bold sigPrice">190.00</p>
+                            <p class="f9f"><span class="em">vip</span>积分100</p>
+                        </div>
+                        <div class="mr120 clearfix pt30">
+                            <button class="fl reNum">-</button><input type="text" class="tc fl num" name="num" value="1"><button class="fl addNum">+</button>
+                            <!-- <form action="#">
+                                <input type="button" class="fl" value="-" name="subtract"><input type="text" class="fl tc" name="num" value="1"><input type="button" class="fl" value="+" name="add">
+                            </form> -->
+                        </div>
+                        <div class="tr">
+                            <p><a href="#">移入收藏夹</a></p>
+                            <p><a href="#">删除</a></p>
+                            <p><a href="#">分享</a></p>
+                            <p><a href="#">相似宝贝</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="second mt10 father">
+                <div class="title">
+                    <input type="checkbox" class="mr10 sigAllSelect">  木果果木官方旗舰店  <span class="contact mr10 ml20 ">联系商家</span> <span class="fred">满2件包邮</span>
+                    <div class="sList clearfix">
+                        <div class="mr10 pt40"><input type="checkbox" class="sigSelect"></div>
+                        <div class="mr20"><img src="../img/left.jpg" alt=""></div>
+                        <div style="width: 248px;" class="mr60">
+                            <h4><a href="#" class="f333">木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫</a></h4>
+                            <br>
+                            <span class="new">新品</span><span class="free">包邮</span>
+                        </div>
+                        <div class="mr120" style="width: 85px;">
+                            <p>颜色:炫酷黑</p>
+                            <p>尺寸:M</p>
+                        </div>
+                        <div style="width:72px;" class="mr100 tc">
+                            <p class="font18 fred bold sigPrice">190.00</p>
+                            <p class="f9f"><span class="em">vip</span>积分100</p>
+                        </div>
+                        <div class="mr120 clearfix pt30">
+                            <button class="fl reNum">-</button><input type="text" class="tc fl num" name="num" value="1"><button class="fl addNum">+</button>
+                            <!-- <form action="#">
+                                <input type="button" class="fl" value="-" name="subtract"><input type="text" class="fl tc" name="num" value="1"><input type="button" class="fl" value="+" name="add">
+                            </form> -->
+                        </div>
+                        <div class="tr">
+                            <p><a href="#">移入收藏夹</a></p>
+                            <p><a href="#">删除</a></p>
+                            <p><a href="#">分享</a></p>
+                            <p><a href="#">相似宝贝</a></p>
+                        </div>
+                    </div>
+                    <div class="sList clearfix">
+                        <div class="mr10 pt40"><input type="checkbox" class="sigSelect"></div>
+                        <div class="mr20"><img src="../img/left.jpg" alt=""></div>
+                        <div style="width: 248px;" class="mr60">
+                            <h4><a href="#" class="f333">木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫</a></h4>
+                            <br>
+                            <span class="new">新品</span><span class="free">包邮</span>
+                        </div>
+                        <div class="mr120" style="width: 85px;">
+                            <p>颜色:炫酷黑</p>
+                            <p>尺寸:M</p>
+                        </div>
+                        <div style="width:72px;" class="mr100 tc">
+                            <p class="font18 fred bold sigPrice"> 190.00</p>
+                            <p class="f9f"><span class="em">vip</span>积分100</p>
+                        </div>
+                        <div class="mr120 clearfix pt30">
+                            <button class="fl reNum">-</button><input type="text" class="tc fl num" name="num" value="1"><button class="fl addNum">+</button>
+                            <!-- <form action="#">
+                                <input type="button" class="fl" value="-" name="subtract"><input type="text" class="fl tc" name="num" value="1"><input type="button" class="fl" value="+" name="add">
+                            </form> -->
+                        </div>
+                        <div class="tr">
+                            <p><a href="#">移入收藏夹</a></p>
+                            <p><a href="#">删除</a></p>
+                            <p><a href="#">分享</a></p>
+                            <p><a href="#">相似宝贝</a></p>
+                        </div>
+                    </div>
+                    <div class="sList clearfix">
+                        <div class="mr10 pt40"><input type="checkbox" class="sigSelect"></div>
+                        <div class="mr20"><img src="../img/left.jpg" alt=""></div>
+                        <div style="width: 248px;" class="mr60">
+                            <h4><a href="#" class="f333">木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫</a></h4>
+                            <br>
+                            <span class="new">新品</span><span class="free">包邮</span>
+                        </div>
+                        <div class="mr120" style="width: 85px;">
+                            <p>颜色:炫酷黑</p>
+                            <p>尺寸:M</p>
+                        </div>
+                        <div style="width:72px;" class="mr100 tc">
+                            <p class="font18 fred bold sigPrice">190.00</p>
+                            <p class="f9f"><span class="em">vip</span>积分100</p>
+                        </div>
+                        <div class="mr120 clearfix pt30">
+                            <button class="fl reNum">-</button><input type="text" class="tc fl num" name="num" value="1"><button class="fl addNum">+</button>
+                            <!-- <form action="#">
+                                <input type="button" class="fl" value="-" name="subtract"><input type="text" class="fl tc" name="num" value="1"><input type="button" class="fl" value="+" name="add">
+                            </form> -->
+                        </div>
+                        <div class="tr">
+                            <p><a href="#">移入收藏夹</a></p>
+                            <p><a href="#">删除</a></p>
+                            <p><a href="#">分享</a></p>
+                            <p><a href="#">相似宝贝</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gess">
+                <h4 class="font18 f333 lh30">猜你喜欢</h4>
+                <ul class="clearfix mt30">
+                    <li>
+                        <img src="../img/6.jpg" alt="">
+                        <p>就很美</p>
+                        <p>&yen;99.00</p>
+                    </li>
+                    <li>
+                        <img src="../img/6.jpg" alt="">
+                        <p>就很美</p>
+                        <p>&yen;99.00</p>
+                    </li>
+                    <li>
+                        <img src="../img/6.jpg" alt="">
+                        <p>就很美</p>
+                        <p>&yen;99.00</p>
+                    </li>
+                    <li>
+                        <img src="../img/6.jpg" alt="">
+                        <p>就很美</p>
+                        <p>&yen;99.00</p>
+                    </li>
+                    <li>
+                        <img src="../img/6.jpg" alt="">
+                        <p>就很美</p>
+                        <p>&yen;99.00</p>
+                    </li>
+                    <li>
+                        <img src="../img/6.jpg" alt="">
+                        <p>就很美</p>
+                        <p>&yen;99.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <!-- 页脚 -->
+    <div id="footer" class="mt60">
+        <div class="contain-fluid bgcfff">
+            <div class="ptb50 contain">
+                <ul class="logo clearfix">
+                    <li>
+                        <span class="logo1"></span>
+                        <h5>正品保障</h5>
+                        <p>正品行货  放心选购</p>
+                    </li>
+                    <li>
+                        <span class="logo2"></span>
+                        <h5>正品保障</h5>
+                        <p>满86元 免运费</p>
+                    </li>
+                    <li>
+                        <span class="logo3"></span>
+                        <h5>正品保障</h5>
+                        <p>7天无理由退货</p>
+                    </li>
+                    <li>
+                        <span class="logo4"></span>
+                        <h5>正品保障</h5>
+                        <p>收货时间由你做主</p>
+                    </li>
+                </ul>
+                <div class="nav clearfix">
+                    <div>
+                        <h5>新手入门</h5>
+                        <ul>
+                            <li><a href="#">购物流程</a></li>
+                            <li><a href="#">会员制度</a></li>
+                            <li><a href="#">订单查询</a></li>
+                            <li><a href="#">服务协议及隐私说明</a></li>
+                            <li><a href="#">网站地图</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>支付方式</h5>
+                        <ul>
+                            <li><a href="#">货到付款</a></li>
+                            <li><a href="#">网上支付</a></li>
+                            <li><a href="#">礼品卡支付</a></li>
+                            <li><a href="#">其他支付</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>配送服务</h5>
+                        <ul>
+                            <li><a href="#">配送进度查询</a></li>
+                            <li><a href="#">商品验货与签收</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>相关规则</h5>
+                        <ul>
+                            <li><a href="#">平台规则</a></li>
+                            <li><a href="#">退换货政策</a></li>
+                            <li><a href="#">发票制度</a></li>
+                            <li><a href="#">帮助中心</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>App更优惠</h6>
+                        <img src="../img/qryhd.png" alt="">
+                    </div>
+                    <div>
+                        <h6>加微信查订单</h6>
+                        <img src="../img/qryhd.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contain-fluid bgcf9f last ptb30">
+            
+                <p><a href="#">沪ICP备XXXXXXXXX号</a> | 经营证照 | <a href="#">互联网药品信息服务资格证(沪)-经营性-2017-0006</a> | 违法和不良信息举报电话：XXX-XXXXXXXX | 沪B2-XXXXXXX | </p>
+                <p class="mb19"> 沪公网安备 XXXXXXXXX号 | <a href="#">友情链接</a> | <a href="#">出版物经营许可证</a> | <a href="#">增值电信业务经营许可证</a></p>
+                <a href="#"><img src="../img/last1.jpg" alt=""></a>
+                <a href="#"><img src="../img/last2.jpg" alt=""></a>
+                <a href="#"><img src="../img/last3.jpg" alt=""></a>
+                <a href="#"><img src="../img/last4.jpg" alt=""></a>
+                <a href="#"><img src="../img/last5.jpg" alt=""></a>
+                <a href="#"><img src="../img/last6.jpg" alt=""></a>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@charset 'utf-8';
+
+
+/* head */
+#head .left img{
+    width: 169px;
+    height: 88px;
+}
+#head .right{
+    width: 200px;
+    height: 52px;
+    line-height: 30px;
+}
+#head .right img{
+    width: 51px;
+    height: 51px;
+    float: left;
+}
+
+
+/* main */
+#main{
+    height: 600px;
+    background: url(../img/banner03.png) no-repeat center;
+}
+#main .interface{
+    width: 400px;
+    height: 445px;
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    display: none;
+
+}
+#main .interface .top{
+    width: 400px;
+    height: 88px;
+    border-bottom: 2px solid #a1a1a1;
+    padding-top: 50px;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+#main .interface .top p{
+    font-size: 18px;
+    color: #808080;
+    line-height: 24px;
+    float: left;
+    margin-left: 74px;
+    position: relative;
+}
+#main .interface .top p:hover{
+    color: orange;
+}
+#main .interface .top p.on:after{
+    content: '';
+    display: block;
+    background-color: orange;
+    height: 4px;
+    width: 150%;
+    position: absolute;
+    bottom: -14px;
+    right: -25%;
+}
+
+#main .interface .top span{
+    display: block;
+    width: 61px;
+    height: 61px;
+    background: url(../img/upload.png) no-repeat;
+    position: absolute;
+    right: 4px;
+    top: 20px;
+    cursor: pointer;
+}
+#main .interface .down{
+    padding: 0 35px 35px 35px;
+}
+#main .interface .down form input{
+    width: 330px;
+    height: 45px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#main .interface .down .icon{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: orange;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+#main .interface .down .pwdIcon{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: orange;
+    position: absolute;
+    top: 125px;
+    right: 0;
+}
+#main .interface .down .search_btn{
+    cursor: pointer;
+}
+
+
+
+/* telLoad */
+#main .telLoad{
+    width: 400px;
+    height: 445px;
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    display: none;
+    
+}
+
+
+#main .telLoad .top img{
+    width: 44px;
+    height: 44px;
+}
+#main .telLoad .mid img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 50%;
+    top: 140px;
+    margin-right: -25%;
+}
+#main .telLoad .download{
+    position: absolute;
+    bottom: 30px;
+    left: 35%;
+}
+#main .telLoad .pic{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../img/load2.png) no-repeat -8px 0px;
+    position: absolute;
+    top: 26px;
+    right: 22px;
+    cursor: pointer;
+}
+
+.on{
+    display: block!important;
+}
+/*  */

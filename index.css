@@ -1,0 +1,532 @@
+@charset "utf-8";
+
+
+#menu{
+    
+    width: 230px;
+    height: 479px;
+    background: rgba(255, 192, 203, .9);
+    z-index: 999;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+#menu>li{
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+}
+#menu>li p{
+    line-height: 38px;
+    position: relative;
+    z-index: 9999;
+    padding-left: 20px;
+    border-right:pink;
+}
+#menu>li .submenu {
+    width: 900px;
+    height: 479px;
+    background: rgba(255, 192, 203, .9);
+    position: absolute;
+    top: 0px;
+    left: 230px;
+    display: none;
+    z-index: 888;
+}
+#menu>li:hover p,#menu>li.active p{
+    background: pink;
+}
+#menu>li.active .submenu{
+    display: block;
+}
+#menu>li p:after{
+    content:'>';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+/* banner */
+
+#banner{
+    height: 477px;
+    background: url(../img/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#banner .scroll-banner {
+    width: 100%;
+    height: 477px;
+    position: absolute;
+	z-index: 0;
+}
+#banner .scroll-banner .scroll-content {
+	height: 460px
+}
+#banner .scroll-banner .scroll-content li {
+	position: absolute;
+	height: 477px;
+	width: 1200px;
+}
+#banner .scroll-banner .scroll-item {
+	position: absolute;
+	width: 100%;
+	
+	display: none
+}
+#banner .scroll-item img{
+    width: 1190px;
+    height: 477px;
+}
+#banner .scroll-btn{
+    position: absolute;
+    z-index: 333333444;
+    bottom: 20px;
+    left: 650px;
+}
+.scroll-btn span {
+	display: inline-block;
+	width: 30px;
+	height: 5px;
+	margin: 0 1px;
+	cursor: pointer;
+	background-color: #fff;
+}
+.scroll-btn span.current {
+	background: #333;
+}
+
+/* 主体 */
+#main{background:#eee}
+#main .proList>li:not(:last-child){float: left;margin-right:20px;}
+#main .proList>li img{width: 285px;height: 154px;}
+#main .download img{width: 1200px;}
+#main .time{
+    width: 228px;
+    height: 285px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid red;
+    background: red;
+}
+#main .time p>span{
+    width: 40px;
+    line-height: 45px;
+    background-color: #666666;
+    margin: 0 10px;
+}
+#main .sale{
+    
+    position: relative;
+    overflow: hidden;
+}
+#main .sale .saleList{
+    width: 960px;
+    height: 285px;
+    overflow: hidden;
+}
+#main .sale ul>li{
+    width: 228px;
+    height: 285px;
+    /* border: 1px solid red; */
+    background-color: #fff;
+    float: left;
+    margin-left: 12px;
+    font-size: 14px;
+}
+#main .sale img{
+    width: 198px;
+    height: 198px;
+    text-align: center;
+    padding: 15px;
+}
+#main .sale .arrow-left{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url(../img/nav.png) no-repeat 8px;
+    background-color: #666666;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: -18px;
+}
+#main .sale .arrow-right{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url(../img/nav.png) no-repeat -50px;
+    background-color: #666666;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    right: -18px;
+}
+/* 每日好货 */
+#everyday h3{
+    text-align: center;
+}
+#everyday h3:after{
+    content: '';
+    display: block;
+    width: 110px;
+    height: 4px;
+    background: #ff0000;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#everyday .icon1{
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    margin-right: 20px;
+}
+#everyday .icon2{
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    transform: rotate(180deg);
+    margin-left: 20px;
+}
+#everyday>div{
+    width: 585px;
+    height: 410px;
+
+}
+#everyday .left li{
+    position: relative;
+    float: left;
+}
+#everyday .left ul>li:nth-child(2){
+    margin: 0 16px;
+}
+#everyday .left ul>li img{
+    width: 165px;
+    height: 250px;
+}
+#everyday .left ul>li span{
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    display: block;
+    width: 140px;
+    height: 55px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 55px;
+    font-size: 26px;
+}
+#everyday .right li{
+    position: relative;
+    float: left;
+}
+#everyday .right ul>li:nth-child(2){
+    margin: 0 16px;
+}
+#everyday .right ul>li img{
+    width: 165px;
+    height: 250px;
+    /* margin: 0 5px; */
+}
+#everyday .right ul>li span{
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    display: block;
+    width: 140px;
+    height: 55px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 55px;
+    font-size: 26px;
+    /* margin: 0 auto; */
+}
+/* 服装配饰 */
+#clothing{position: relative;}
+
+#clothing .top{position: relative;}
+#clothing .top span{
+    display: block;
+    width: 156px;
+    line-height: 35px;
+    background-color: #ffbd0d;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+}
+#clothing .top div{
+    position: absolute;
+    left: 132px;
+    top: 10px;
+    float: left;
+    width: 0;
+    height: 0;
+    border: 24px solid #ffbd0d;
+    border-bottom-color:transparent; 
+    border-right-color:transparent; 
+    border-top-color:transparent; 
+    transform: rotate(135deg);
+}
+
+#clothing .first .tabChange{
+    display: none;
+}
+#clothing .first .on{
+    display: block;
+}
+#clothing .top ul>li{
+    float: left;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 10px;
+    position: relative;
+}
+#clothing .top ul>li{
+    color: #808080;
+    
+}
+#clothing .top ul>li:hover{
+    color: #ffbd0d;
+}
+#clothing .top ul>li:hover:after{
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 50%;
+    background: #ffbd0d;
+    margin-left: 25%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+#clothing .left{
+    width: 260px;
+}
+#clothing .left img{
+    width: 260px;
+    height: 330px;
+    position: relative;
+}
+#clothing .left ul{
+    width: 260px;
+    height: 130px;
+    background-color: #fff;
+    padding: 19px 17px;
+    box-sizing: border-box;
+}
+#clothing .left ul>li{
+    width: 70px;
+    line-height: 24px;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    text-align: center;
+    float: left;
+    margin-bottom: 7px;
+}
+#clothing .left ul>li:nth-child(3n-1){
+    margin: 0 5px;
+}
+#clothing .left{
+    overflow: hidden;
+}
+#clothing .left ul>li a{
+    color: #6f6f6f;
+}
+#clothing .left .gold{
+    width: 280px;
+    height: 80px;
+    background-color: rgba(43, 43, 43, 0.6);
+    border-radius: 20px;
+    padding: 10px 0 10px 100px;
+    font-size: 24px;
+    box-sizing: border-box;
+    color: #fff;
+    position: absolute;
+    top: 216px;
+    left: -70px;
+}
+#clothing .mid .banner{
+    width: 455px;
+    height: 300px;
+}
+#clothing .mid-bottom img{
+    width: 455px;
+    height: 150px;
+}
+#clothing .right{
+    width: 455px;
+
+}
+#clothing .right ul>li{
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+#clothing .sLogo ul>li{
+    margin-top: 20px;
+    float: left;
+    
+}
+#clothing .sLogo ul>li img{
+    width: 128px;
+    height: 65px;
+}
+#clothing .sLogo ul>li:not(:last-child){
+    margin-right: 6px;
+}
+#clothing .second .top span{
+    display: block;
+    width: 156px;
+    line-height: 35px;
+    background-color: #920dff;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+}
+#clothing .second .tabChange{
+    display: none;
+}
+#clothing .second .on{
+    display: block;
+}
+#clothing .second .top div{
+    position: absolute;
+    left: 132px;
+    top: 10px;
+    float: left;
+    width: 0;
+    height: 0;
+    border: 24px solid #920dff;
+    border-bottom-color:transparent; 
+    border-right-color:transparent; 
+    border-top-color:transparent; 
+    transform: rotate(135deg);
+}
+#clothing .second .kind>li:hover:after{
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 50%;
+    background: #920dff;
+    margin-left: 25%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+#clothing .second .kind>li:hover{
+    color: #920dff;
+}
+#clothing .third .top span{
+    display: block;
+    width: 156px;
+    line-height: 35px;
+    background-color: pink;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+}
+#clothing .third .tabChange{
+    display: none;
+}
+#clothing .third .on{
+    display: block;
+}
+#clothing .third .top div{
+    position: absolute;
+    left: 132px;
+    top: 11px;
+    float: left;
+    width: 0;
+    height: 0;
+    border: 24px solid pink;
+    border-bottom-color:transparent; 
+    border-right-color:transparent; 
+    border-top-color:transparent; 
+    transform: rotate(135deg);
+}
+#clothing .third .kind>li:hover:after{
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 50%;
+    background: pink;
+    margin-left: 25%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+#clothing .third .kind>li:hover{
+    color: pink;
+}
+#clothing .fouth .top span{
+    display: block;
+    width: 156px;
+    line-height: 35px;
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+}
+#clothing .fouth .tabChange{
+    display: none;
+}
+#clothing .fouth .on{
+    display: block;
+}
+#clothing .fouth .top div{
+    position: absolute;
+    left: 132px;
+    top: 10px;
+    float: left;
+    width: 0;
+    height: 0;
+    border: 24px solid green;
+    border-bottom-color:transparent; 
+    border-right-color:transparent; 
+    border-top-color:transparent; 
+    transform: rotate(135deg);
+}
+#clothing .fouth .kind>li:hover:after{
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 50%;
+    background: green;
+    margin-left: 25%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+#clothing .fouth .kind>li:hover{
+    color: green;
+}
+
+/* .rightIcon .rIcon2:after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 22px;
+    background: url(../img/shoppingempty.png) no-repeat;
+    background-position-y: -13px;
+    background-position-x: -4px;
+    position: absolute;
+    top: 0;
+    right: 84px;
+} */
+
+
+
+
+
+

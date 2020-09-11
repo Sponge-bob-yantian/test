@@ -1,0 +1,304 @@
+@charset 'utf-8';
+
+
+/* banner */
+#banner{
+    height: 480px;
+    background: url(../img/bigbanner.png) no-repeat center;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 24px;
+    text-align: left;
+}
+#banner .proList{
+    width: 270px;
+    height: 395px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 26px;
+    right: 10px;
+}
+#banner .proList h2{
+    text-align: center;
+}
+#banner .proList h3{
+    font-weight: normal;
+    margin-top: 10px;
+}
+#banner .proList>ul li{
+    font-size: 14px;
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+}
+#banner .proList>ul li a{
+    color: #fff;
+}
+#banner .proList>ul li:hover a{
+    color: pink;
+}
+#banner .proList>ul{
+    border-bottom: 2px dashed #fff;
+    padding: 0 26px 10px 26px;
+}
+
+
+/* guide */
+
+#guide .left{
+    width: 234px;
+    height: 370px;
+    float: left;
+}
+#guide .left>div,#guide .mid>div,#guide .right>div{
+    height: 50px;
+    background-color: #fff;
+    color: #333;
+    font-size: 24px;
+    line-height: 50px;
+    padding-left: 20px;
+    position: relative;
+}
+#guide .left img{
+    width: 234px;
+    height: 320px;
+}
+#guide .mid,#guide .right{
+    width: 470px;
+    height: 370px;
+    float: left;
+}
+#guide .mid img,#guide .right img{
+    width: 470px;
+    height: 320px;
+}
+#guide i{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: url(../img/nav11.png) no-repeat -23px 0;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+#guide .down ul>li{
+    
+    float: left;
+}
+#guide .down ul>li img{
+    width: 285px;
+    height: 101px;
+}
+#guide .down ul>li:not(:last-child){
+    margin-right: 20px;
+}
+
+/* hot */
+#hot .womenDress .title{
+    text-align: center;
+    position: relative;
+}
+#hot .womenDress .title h2{
+    letter-spacing: 10px;
+}
+
+#hot .womenDress .title .bg_Icon1{
+    display: inline-block;
+    width: 170px;
+    height: 30px;
+    background: url(../img/bg_Icon.png) no-repeat -22px -5px;
+    position: absolute;
+    top: 6px;
+    left: 320px;
+}
+#hot .womenDress .title .bg_Icon2{
+    display: inline-block;
+    width: 170px;
+    height: 30px;
+    background: url(../img/bg_Icon.png) no-repeat -22px -5px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 6px;
+    right: 320px;
+}
+#hot .womenDress .content .left>div{
+    width: 272px;
+    height: 410px;
+    /* background: url(../img/left.jpg) no-repeat; */
+    position: relative;
+}
+#hot .womenDress .content .left>div img{
+    width: 272px;
+    height: 410px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#hot .womenDress .content .left>div ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 22;
+}
+#hot .womenDress .content .left>div ul li{
+    width: 113px;
+    height: 35px;
+    border: 1px solid #fff;
+    background-color: rgba(255,255,255,.5);
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    margin:8px 10px 8px 10px;
+}
+#hot .womenDress .content .left>div ul li a{
+    color: #fff;
+}
+#hot .womenDress .content .left>div ul li:hover a{
+    color: pink;
+}
+#hot .womenDress .content .mid{
+    width: 624px;
+}
+#hot .womenDress .content .mid ul>li{
+    width: 312px;
+    height: 205px;
+    background-color: #fff;
+    line-height: 24px;
+    float: left;
+    position: relative;
+}
+#hot .womenDress .content .mid ul>li:first-child img,
+#hot .womenDress .content .mid ul>li:last-child img{
+    width: 312px;
+    height: 205px;
+}
+#hot .womenDress .content .mid ul>li:nth-child(2) img,
+#hot .womenDress .content .mid ul>li:nth-child(3) img{
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+#hot .womenDress .content .mid ul>li:nth-child(2),
+#hot .womenDress .content .mid ul>li:nth-child(3){
+    padding: 20px;
+    box-sizing: border-box;
+}
+#hot .womenDress .content .right{
+    width: 274px;
+    height: 410px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#hot .womenDress .list img{
+    width: 99px;
+    height: 99px;
+    /* display: none; */
+    margin-right: 10px;
+}
+.number{
+    display: none;
+}
+.on{
+    display: block;
+    width: 20px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    background: red;
+    position: absolute;
+    top: 0px;
+    left: 78px;
+}
+
+
+
+#hot .womenDress .content .right .list ul>li{
+    width: 232px;
+    float: left;
+    /* padding-bottom: 5px; */
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    /* margin-top: 10px; */
+    
+}
+#hot .womenDress .content .right .list ul>li:not(:last-child){
+    border-bottom:2px solid #ccc;
+}
+#hot .womenDress .content .right .list ul li div,
+#hot .womenDress .content .right .list ul li.open h3{
+    display: none;
+}
+#hot .womenDress .content .right .list ul li.open div{
+    display: block;
+}
+
+
+/* brandZone */
+#brandZone .title{
+    text-align: center;
+    position: relative;
+}
+#brandZone .title h2{
+    letter-spacing: 10px;
+}
+
+#brandZone .title .bg_Icon1{
+    display: inline-block;
+    width: 170px;
+    height: 30px;
+    background: url(../img/bg_Icon.png) no-repeat -22px -5px;
+    position: absolute;
+    top: 6px;
+    left: 320px;
+}
+#brandZone .title .bg_Icon2{
+    display: inline-block;
+    width: 170px;
+    height: 30px;
+    background: url(../img/bg_Icon.png) no-repeat -22px -5px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 6px;
+    right: 320px;
+}
+
+#brandZone .content .up img{
+    width: 565px;
+    height: 275px;
+    float: left;
+}
+#brandZone .content .up .right button{
+    width: 324px;
+    height: 62px;
+    cursor: pointer;
+}
+#brandZone .content .down ul li{
+    width: 285px;
+    height: 250px;
+    line-height: 36px;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+}
+#brandZone .content .down ul li img{
+    width: 285px;
+    height: 170px;
+}
+#brandZone .content .down ul li h3{
+    font-size: 24px;
+}
+#brandZone .content .down ul li p{
+    font-size: 16px;
+}

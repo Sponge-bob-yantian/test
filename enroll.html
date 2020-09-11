@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 引入公共样式表 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 引入当前页面样式表 -->
+    <link rel="stylesheet" href="../css/enroll.css">
+    <!-- 引入jq库 -->
+    <script src="../js/jquery.js"></script>
+    <!-- 引入js文件 -->
+    <script src="../js/enroll.js"></script>
+</head>
+<body>
+    <!-- 页头 -->
+    <div id="head" class="contain-fluid bgcfff">
+        <div class="contain clearfix">
+            <div class="left fl">
+                <a href="../temp/index.html"><h1><img src="../img/logogo.jpg" alt=""></h1></a>
+            </div>
+            <div class="right fr clearfix">
+                <p><a href="#"><img src="../img/TEL.jpg" alt=""></a></p>
+                <p>咨询电话</p>
+                <p>XXXXXXXXXXXXXXXXX</p>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div id="main" class="contain-fluid bgcf9f ptb50">
+        <div class="contain bgcfff clearfix ptb50">
+            <div class="top">
+                    <span class="user on">设置用户名<i class="one"></i></span>
+                    <span class="ID">填写账号信息<i class="two"></i></span>
+                    <span class="succeed">注册成功<i class="yes"></i></span>
+            </div>
+            <div class="content fl">
+                <div class="down f666 active cute">
+                    <p class="lh24 font18">注册协议</p>
+                    <p class="lh16 font14"><span class="bold">【审慎阅读】</span>您在申请注册流程中点击同意前,应当认真阅读以下协议。<span class="tunder bold">请您务必审慎阅读充分理解协议中相关条款内容,其中包括:</span></p><br>
+                    1、<span class="tunder bold font14">与您约定免除或限制责任的条款;</span><br><br>
+                    2、<span class="tunder bold font14">与您约定法律适用和管辖的条款;</span><br><br>
+                    3、<span class="tunder bold font14">其他以粗线下划线标识的重要条款。</span><br><br>
+                    <p class="font14">如您对协议有任何疑问,可向平台客服咨询。</p><br>
+                    <p class="font14"><span>【特别提示】</span>当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与淘宝发生争议的，适用《淘宝平台服务协议》处理。如您在使用平台服务过程中与其他用户发生争议的，依您与其他用户达成的协议处理。</p><br>
+                    <p class="font14 tunder bold">阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。</p><br><br>
+                    <p><a href="#" class="f60 font14">平台服务协议</a></p><br>
+                    <p><a href="#" class="f60 font14">隐私权政策</a></p><br>
+                    <p><a href="#" class="f60 font14">法律声明</a></p><br>
+                    <p><a href="#" class="f60 font14">支付宝及客户端服务协议</a></p><br>
+                    <input type="submit" value="同意协议" class="bold btn font14">
+                </div>
+                <div class="writeC cute">
+                    <table class="">
+                        <tr>
+                            <td>真实姓名:</td>
+                            <td><input type="text" placeholder="请输入您的真实姓名" class="ti20" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td>用户名:</td>
+                            <td><input type="text" placeholder="请输入您的账号用户名" class="ti20" name="userName"></td>
+                        </tr>
+                        <tr>
+                            <td>密码:</td>
+                            <td><input type="password" placeholder="请输入密码" class="ti20" name="pwd"></td>
+                        </tr>
+                        <tr>
+                            <td>确认密码:</td>
+                            <td><input type="password" placeholder="请再次输入密码" class="ti20" name="confuse"></td>
+                        </tr>
+                        <tr>
+                            <td>密码强度:</td>
+                            <td><img src="../img/qiang.png" alt="" class="qiang"></td>
+                        </tr>
+                        <tr>
+                            <td>邮箱:</td>
+                            <td>
+                                <input type="password" placeholder="请输入您的邮箱" class="ti20" name="email">@
+                                <select name="" id="">
+                                    <option value="">163.com</option>
+                                    <option value="">qq.com</option>
+                                    <option value="">weibo.com</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机号码:</td>
+                            <td><input type="text" placeholder="请输入您的手机号码" class="ti20" name="tel"></td>
+                        </tr>
+                        <tr style="margin-bottom: 50px;">
+                            <td>验证码:</td>
+                            <td><input type="text" placeholder="请输入手机验证码" class="ti20" name="inputCode"><input type="button" value="获取验证码" name="getCode"></td>
+                            
+                        </tr>
+                    </table>
+                    <input type="submit" value="提交注册" name="sub">
+                </div>
+                <div class="success cute">
+                    <img src="../img/succeed.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="mt60">
+        <div class="contain-fluid bgcfff">
+            <div class="ptb50 contain">
+                <ul class="logo clearfix">
+                    <li>
+                        <span class="logo1"></span>
+                        <h5>正品保障</h5>
+                        <p>正品行货  放心选购</p>
+                    </li>
+                    <li>
+                        <span class="logo2"></span>
+                        <h5>正品保障</h5>
+                        <p>满86元 免运费</p>
+                    </li>
+                    <li>
+                        <span class="logo3"></span>
+                        <h5>正品保障</h5>
+                        <p>7天无理由退货</p>
+                    </li>
+                    <li>
+                        <span class="logo4"></span>
+                        <h5>正品保障</h5>
+                        <p>收货时间由你做主</p>
+                    </li>
+                </ul>
+                <div class="nav clearfix">
+                    <div>
+                        <h5>新手入门</h5>
+                        <ul>
+                            <li><a href="#">购物流程</a></li>
+                            <li><a href="#">会员制度</a></li>
+                            <li><a href="#">订单查询</a></li>
+                            <li><a href="#">服务协议及隐私说明</a></li>
+                            <li><a href="#">网站地图</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>支付方式</h5>
+                        <ul>
+                            <li><a href="#">货到付款</a></li>
+                            <li><a href="#">网上支付</a></li>
+                            <li><a href="#">礼品卡支付</a></li>
+                            <li><a href="#">其他支付</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>配送服务</h5>
+                        <ul>
+                            <li><a href="#">配送进度查询</a></li>
+                            <li><a href="#">商品验货与签收</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>相关规则</h5>
+                        <ul>
+                            <li><a href="#">平台规则</a></li>
+                            <li><a href="#">退换货政策</a></li>
+                            <li><a href="#">发票制度</a></li>
+                            <li><a href="#">帮助中心</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>App更优惠</h6>
+                        <img src="../img/qryhd.png" alt="">
+                    </div>
+                    <div>
+                        <h6>加微信查订单</h6>
+                        <img src="../img/qryhd.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contain-fluid bgcf9f last ptb30">
+            
+                <p><a href="#">沪ICP备XXXXXXXXX号</a> | 经营证照 | <a href="#">互联网药品信息服务资格证(沪)-经营性-2017-0006</a> | 违法和不良信息举报电话：XXX-XXXXXXXX | 沪B2-XXXXXXX | </p>
+                <p class="mb19"> 沪公网安备 XXXXXXXXX号 | <a href="#">友情链接</a> | <a href="#">出版物经营许可证</a> | <a href="#">增值电信业务经营许可证</a></p>
+                <a href="#"><img src="../img/last1.jpg" alt=""></a>
+                <a href="#"><img src="../img/last2.jpg" alt=""></a>
+                <a href="#"><img src="../img/last3.jpg" alt=""></a>
+                <a href="#"><img src="../img/last4.jpg" alt=""></a>
+                <a href="#"><img src="../img/last5.jpg" alt=""></a>
+                <a href="#"><img src="../img/last6.jpg" alt=""></a>
+        </div>
+
+    </div>
+</body>
+</html>

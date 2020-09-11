@@ -1,0 +1,134 @@
+@charset 'utf-8';
+
+
+/* main */
+#main .content{
+    padding: 20px;
+}
+#main .top{
+    border-bottom: 3px solid #434343;
+    padding: 0 25px;
+}
+#main .top .left p{
+    font-size: 16px;
+    margin-right: 50px;
+    float: left;
+}
+#main .top .right p{
+    margin-left: 34px;
+    float: left;
+}
+#main .top .right p button{
+    width: 75px;
+    height: 20px;
+    background-color: orange;
+    color: #fff;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+#main .down .left ul li{
+    line-height:40px;
+    margin-right: 40px;
+    float: left;
+}
+#main .down .left ul li a{
+    color: #333;
+}
+#main .down .left ul li:hover a{
+    color: orange;
+}
+#main .down .right p{
+    margin-left: 40px;
+    float: left;
+}
+#main .down .right p button{
+    width: 68px;
+    height: 22px;
+    line-height: 22px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+}
+#main .first{
+    border-bottom: 1px solid #ccc;
+}
+#main .title .contact{
+    display: inline-block;
+    width: 70px;
+    height: 15px;
+    color: #fff;
+    background-color: #008aff;
+    text-align: center;
+    line-height: 15px;
+}
+#main .sList{
+    padding: 20px 10px;
+    line-height: 30px;
+}
+#main .sList>div{
+    float: left;
+}
+#main .sList .new{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    background-color: orange;
+    color: #fff;
+}
+#main .sList .free{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    background-color: #00ae39;
+    color: #fff;
+}
+#main .sList>div button{
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+#main .sList div input[name = "num"]{
+    width: 40px;
+    height: 30px;
+    border-color: #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+#main .sList>div img{
+    width: 110px;
+    height: 110px;
+}
+#main .sList>div p a{
+    color: #333;
+}
+#main .sList>div p:hover a{
+    color: skyblue;
+}
+#main .gess h4{
+    border-bottom: 1px solid #ccc;
+}
+#main .gess ul li{
+    width: 175px;
+    line-height: 30px;
+    float: left;
+    font-size: 16px;
+}
+#main .gess ul li:not(:last-child){
+    margin-right: 30px;
+}
+#main .gess ul li img{
+    width: 175px;
+    height: 175px;
+}
